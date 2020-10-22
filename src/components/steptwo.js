@@ -4,7 +4,7 @@ import React from "react";
 import open from "open";
 
 export function StepTwo() {
-  const btnHandler = useEventHandler<QPushButtonSignals>(
+  const btnHandler = useEventHandler(
     {
       clicked: () => open("https://react.nodegui.org").catch(console.log)
     },
